@@ -1,0 +1,30 @@
+public class funcoes {
+
+    public static double soma(double n1, double n2) {
+        return n1 + n2;
+    }
+
+    public static double media(double n1) {
+        double x;
+        x = (n1) / 2;
+        return x;
+    }
+
+    public static void verifica(double n1) {
+        if (n1 >= 6) {
+            System.out.println("Aprovado");
+
+        } else {
+            System.out.println("Reprovado");
+
+        }
+
+    }
+
+    public static void main(String[] args) {
+        double num1 = 10, num2 = 10;
+        System.out.println("soma = " + soma(num1, num2));
+        System.out.println("media = " + media(soma(num1, num2)));
+        verifica(media(soma(num1,num2)));
+    }
+}
